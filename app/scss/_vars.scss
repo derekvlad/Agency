@@ -1,0 +1,97 @@
+$bg: #FDF0E9;
+
+
+
+%epilogue-400 {
+    font-family: 'Epilogue-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%epilogue-700 {
+    font-family: 'Epilogue-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%epilogue-800 {
+    font-family: 'Epilogue-ExtraBold', sans-serif;
+    font-weight: 800;
+}
+
+%epilogue-900 {
+    font-family: 'Epilogue-Black', sans-serif;
+    font-weight: 900;
+}
+
+
+%h1 {
+    @extend %epilogue-800;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+}
+
+%h2 {
+    @extend %epilogue-800;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+}
+
+%h3 {
+    @extend %epilogue-800;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+%h4 {
+    @extend %epilogue-700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+%h5 {
+    @extend %epilogue-400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+%label {
+    @extend %epilogue-700;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+%text-big {
+    @extend %epilogue-400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+%text {
+    @extend %epilogue-400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+%text-gray {
+    @extend %epilogue-400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+%text-small {
+    @extend %epilogue-400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+%btn {
+    @extend %epilogue-900;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}

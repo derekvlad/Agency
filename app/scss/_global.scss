@@ -1,0 +1,36 @@
+.container {
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item+.header-top__item {
+        margin-left: 100px;
+    }
+
+    &__item-link {
+        @extend %text;
+        color: #fff;
+        text-decoration: none;
+    }
+    &__menu{
+        padding-top: 10px;
+    }
+
+    &__link-btn {
+        @extend %btn;
+        padding: 18px 35px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.295743);
+        border-radius: 6px;
+        color: #fff;
+    }
+}

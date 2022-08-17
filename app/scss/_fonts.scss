@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Epilogue-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Epilogue-Regular'),
+        url('../fonts/Epilogue-Regular.woff2') format('woff2'),
+        url('../fonts/Epilogue-Regular.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Epilogue-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Epilogue-Bold'),
+        url('../fonts/Epilogue-Bold.woff2') format('woff2'),
+        url('../fonts/Epilogue-Bold.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Epilogue-ExtraBold';
+    font-weight: 800;
+    font-style: normal;
+    src: local('Epilogue-ExtraBold'),
+        url('../fonts/Epilogue-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Epilogue-ExtraBold.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Epilogue-Black';
+    font-weight: 900;
+    font-style: normal;
+    src: local('Epilogue-Black'),
+        url('../fonts/Epilogue-Black.woff2') format('woff2'),
+        url('../fonts/Epilogue-Black.woff') format('woff');
+    font-display: swap;
+}

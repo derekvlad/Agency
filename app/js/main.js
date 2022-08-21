@@ -1,26 +1,4 @@
 $(function () {
-    // var accordion = function (){
-    //     var data = $('.faq__accordion').attr('data-accordion');
-    //     $('.faq__item').on('click', function(){
-    //         if (data === 'close'){
-    //             $('.faq__item-text').slideUp();
-    //             if($(this).hasClass('active')){
-    //                 $(this).toggleClass('active');
-    //             }
-    //             else{
-    //                 $('.faq__item-text').removeClass('active')
-    //                 $(this).toggleClass('active');
-
-    //             }
-    //         }
-    //         else {
-    //             $(this).toggleClass('active');
-               
-    //         }
-    //         // $(this).next('.faq__item-text').not(':animated').slideToggle();
-    //     });
-    // };
-    // accordion();
 
     $('.faq__item').accordion({
         "transitionSpeed": 400
@@ -47,4 +25,6 @@ $(function () {
         $('.filter-nav__inner').removeClass('filter-nav__inner--flex');
     })
 
+
+    $('.form__select').styler();
 });

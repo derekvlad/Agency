@@ -136,7 +136,8 @@
     &__title {
         @extend %h2;
         color: #391400;
-        margin-bottom: 26px;
+        padding-bottom: 26px;
+        max-width: 417px;
     }
 
     &__big-text {
@@ -148,7 +149,7 @@
     &__text {
         @extend %text;
         color: rgba(57, 20, 0, 0.64);
-        margin-bottom: 34px;
+        padding-bottom: 34px;
     }
 
     &__btn {
@@ -1558,6 +1559,7 @@
         padding: 18px 45px 16px;
         box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
         border-radius: 6px;
+        cursor: pointer;
     }
 }
 
@@ -1636,6 +1638,7 @@
         padding: 18px 30px 16px;
         margin-left: 220px;
         justify-content: flex-end;
+        cursor: pointer;
     }
 }
 
@@ -1708,12 +1711,30 @@
     border-radius: 6px;
     background-color: #fff;
     box-shadow: none;
+    font: 16px/32px 'Epilogue-Regular', sans-serif;
+    color: rgba(57, 20, 0, 0.64);
+
+}
+
+.jq-selectbox ul {
+    border-radius: 6px;
+}
+
+.jq-selectbox li {
+    border: 1px solid #F3D1BF;
+    padding: 10px 15px;
+    color: rgba(57, 20, 0, .64);
+}
+
+.jq-selectbox li.selected {
+    background-color: #f7f3f1;
+    color: rgba(57, 20, 0, .64);
 
 }
 
 .jq-selectbox li:hover {
     background-color: #fff;
-    color: #391400;
+    color: rgba(57, 20, 0, .64);
 }
 
 .contact {
@@ -1819,56 +1840,166 @@
         padding: 18px 32px 16px;
     }
 }
-.footer{
+
+.footer {
     padding: 90px 0 43px;
     background-color: #FDF0E9;
 }
-.footer-top{
+
+.footer-top {
     display: flex;
     justify-content: space-between;
     padding-bottom: 68px;
     border-bottom: 1px solid #F3D1BF;
-    &__link-logo{
+
+    &__link-logo {
         @extend %h4;
         color: #391400;
     }
-    &__title{
+
+    &__title {
         @extend %h5;
         color: #EF6D58;
         margin-bottom: 16px;
     }
-    &__item{
+
+    &__item {
         @extend %text;
         color: #391400;
     }
-    &__list-social{
+
+    &__list-social {
         display: flex;
         width: 160px;
         justify-content: space-between;
     }
 }
-.footer-copy{
+
+.footer-copy {
     padding-top: 43px;
     display: flex;
     justify-content: space-between;
-    &__text{
+
+    &__text {
         @extend %text;
         color: rgba(57, 20, 0, 0.64);
     }
-    &__link-inner{
+
+    &__link-inner {
         display: flex;
         justify-content: space-between;
     }
-    &__link{
+
+    &__link {
         @extend %text;
         color: #391400;
-        &:last-child{
+
+        &:last-child {
             margin-left: 68px;
         }
     }
 }
 
+.about-page {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    &__text-wrapper {
+        padding: 56px 0 79px;
+    }
 
+    &__text {
+        max-width: 570px;
+
+    }
+}
+
+.video-about {
+    background-color: #FDF0E9;
+    padding-bottom: 128px;
+
+    &__img {
+        padding: 150px 0;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    &__screen {
+        background-image: url(../images/video/about-video.png);
+        padding: 0;
+    }
+
+}
+
+.feature-skills__items-about {
+    padding-bottom: 144px;
+}
+
+.about-statistic {
+    padding-bottom: 128px;
+}
+
+.team {
+    padding-top: 92px;
+}
+
+.testimonials-about {
+    background-color: #28293E;
+
+    &__subtitle {
+        @extend %h5;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__title {
+        @extend %h2;
+        color: #fff;
+        max-width: 394px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__items {
+        display: block;
+        margin: 0 auto;
+        
+    }
+    
+    &__item {
+        padding: 48px 48px 52px;
+        background-color: #fff;
+        border: 1px solid #F3D1BF;
+        box-shadow: 0px 32px 64px rgba(57, 20, 0, 0.04);
+        border-radius: 0px 0px 6px 6px;
+        opacity: .5;
+        transition: all .3s;
+        max-width: 770px;
+        min-height: 336px;
+        
+        
+    }
+    &__item .slick-center{
+        
+    }
+
+    &__text{
+
+    }
+}
+.slick-center .testimonials-about__item{
+    opacity: 1;
+    min-height: 400px;
+    
+}
+.slick-slide .testimonials-about__item{
+    
+}
 
 @import 'media';

@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 .container {
     max-width: 1190px;
     padding: 0 10px;
@@ -22,7 +29,8 @@
         color: #fff;
         text-decoration: none;
     }
-    &__menu{
+
+    &__menu {
         padding-top: 10px;
     }
 
@@ -32,5 +40,23 @@
         border: 1px solid rgba(255, 255, 255, 0.295743);
         border-radius: 6px;
         color: #fff;
+    }
+}
+.header-bottom {
+    text-align: center;
+    &__title {
+        @extend %h1;
+        color: #fff;
+        margin: 0 auto;
+        margin-bottom: 24px;
+       
+        padding-top: 104px;
+    }
+    &__text{
+        @extend %text;
+        color: rgba(255, 255, 255, 0.64);
+        padding-bottom: 64px;
+        max-width: 570px;
+        margin: 0 auto;
     }
 }

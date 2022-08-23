@@ -14,7 +14,13 @@ $(function () {
         nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><img src="images/team/ar-right.svg" alt=""></button>',
     });
 
-   
+    $('.testimonials-about__items').slick({
+        arrows: false,
+        dots: true,
+        cssEase: 'linear',
+        centerMode: true,
+        variableWidth: true,
+    });
 
     var mixer = mixitup('.filter-nav__inner');
 
@@ -27,4 +33,6 @@ $(function () {
 
 
     $('.form__select').styler();
+
+
 });

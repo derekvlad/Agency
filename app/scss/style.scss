@@ -107,6 +107,9 @@
         padding-bottom: 73px;
         border-bottom: 1px solid #F3D1BF;
     }
+    &__img{
+        object-fit: contain;
+    }
 }
 
 .about {
@@ -1969,6 +1972,7 @@
     &__items {
         display: block;
         margin: 0 auto;
+        padding-bottom: 220px;
         
     }
     
@@ -1985,21 +1989,63 @@
         
         
     }
-    &__item .slick-center{
-        
-    }
-
-    &__text{
-
-    }
 }
 .slick-center .testimonials-about__item{
     opacity: 1;
     min-height: 400px;
-    
 }
-.slick-slide .testimonials-about__item{
+.testimonials-about__items  ul.slick-dots{
+    margin-top: 64px;
+}
+.faq-about{
+    background-color: #28293E;
+    &__content{
+        max-width: 770px;
+    }
+    &__title{
+        color: #FFFFFF;
+    }
+    &__text{
+        color: #FFFFFF;
+        margin-bottom: 65px;
+    }
+    &__item{
+        width: 100%;
+        border: 1px solid #3A3C56;
+        transition: all .4s;
+    }
+    &__item-title{
+        color: #FFFFFF;
+    }
+    &__item.open > .faq-about__item-title{
+        color: #391400;
+    }
+    &__accordion{
+        padding-bottom: 117px;
+    }
+}
+.about-partners{
+    background-color: #28293E;
+    padding-bottom: 541px;
     
+    &__inner{
+        border-bottom: none;
+    }
 }
 
+
+.about-banner{
+    position: relative;
+    &__inner{
+        position: absolute;
+        bottom: -145px;
+        max-width: 1170px;
+    }
+    &__content{
+        margin-right: 90px;
+    }
+}
+.about-footer{
+    padding-top: 217px;
+}
 @import 'media';

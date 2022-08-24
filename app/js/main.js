@@ -1,7 +1,10 @@
 $(function () {
 
     $('.faq__item').accordion({
-        "transitionSpeed": 400
+        transitionSpeed: 400,
+    });
+    $('.service-accordion__item').accordion({
+        transitionSpeed: 400,
     });
 
 

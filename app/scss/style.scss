@@ -1441,6 +1441,10 @@
         width: 226px;
         display: flex;
         justify-content: flex-end;
+        
+    }
+    &__corp-img{
+       
     }
 
     &__now-inner {
@@ -1460,6 +1464,9 @@
         color: #391400;
         padding-bottom: 112px;
     }
+}
+img .awards__corp-img{
+    object-fit: contain;
 }
 
 .blog {

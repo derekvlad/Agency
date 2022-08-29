@@ -11,6 +11,18 @@ body {
     margin: 0 auto;
 }
 
+.menu__btn {
+    display: none;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 6px;
+    padding: 17px 16px;
+    transition: all 0.5s;
+    &:hover{
+        background-color: #2f304a;
+    }
+}
+
 .header-top {
     display: flex;
     justify-content: space-between;
@@ -42,21 +54,50 @@ body {
         color: #fff;
     }
 }
+
 .header-bottom {
     text-align: center;
+
     &__title {
         @extend %h1;
         color: #fff;
         margin: 0 auto;
         margin-bottom: 24px;
-       
+
         padding-top: 104px;
     }
-    &__text{
+
+    &__text {
         @extend %text;
         color: rgba(255, 255, 255, 0.64);
         padding-bottom: 64px;
         max-width: 570px;
         margin: 0 auto;
+    }
+}
+
+.pagination {
+    &__list {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__item+.pagination__item {
+        margin-left: 8px;
+    }
+
+    &__link {
+        @extend %btn;
+        background-color: #fff;
+        box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+        border-radius: 6px;
+        padding: 18px 19px 16px;
+        color: #391400;
+    }
+
+    &__link--active {
+        background-color: #EF6D58;
+        color: #fff;
     }
 }

@@ -24,6 +24,7 @@
     "gulp-sass": "^5.1.0",
     "jq-accordion": "^1.0.3",
     "jquery-form-styler": "^2.0.2",
+    "jquery-paginate": "^1.0.1",
     "jquery.formstyler-modern": "^2.1.6",
     "mixitup": "^3.3.1",
     "sass": "^1.52.3",
